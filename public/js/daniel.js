@@ -64,7 +64,7 @@ class App extends React.Component {
         <div className='main-section'>
           <div className='container-2'>
             <h5>Rent a Movie</h5>
-            <form onSubmit={this.handleSubmit}>
+            <form className='form' onSubmit={this.handleSubmit}>
               <label className='form' htmlFor='title'>
                 Title:
               </label>
@@ -116,22 +116,11 @@ class App extends React.Component {
               })}
             </ul>
           </div>
-          <div className='container-3'>
+          <div className='container-2'>
             <h5>
               Accepted Requests <br />
               Coming Soon
             </h5>
-            <div className='coming-soon'>
-              <div className='fight'>
-                <h7>Fight Club</h7>
-              </div>
-              <div className='matrix'>
-                <h7>The Matrix</h7>
-              </div>
-              <div className='sixth'>
-                <h7>The Sixth Sense</h7>
-              </div>
-            </div>
           </div>
         </div>
       </div>

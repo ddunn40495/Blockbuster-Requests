@@ -65,16 +65,24 @@ class App extends React.Component {
           <div className='container-2'>
             <h5>Rent a Movie</h5>
             <form onSubmit={this.handleSubmit}>
-              <label htmlFor='title'>Title:</label>
+              <label className='form' htmlFor='title'>
+                Title:
+              </label>
               <input type='text' onChange={this.handleChange} id='title' />
               <br />
-              <label htmlFor='year'>Year:</label>
+              <label className='form' htmlFor='year'>
+                Year:
+              </label>
               <input type='text' onChange={this.handleChange} id='year' />
               <br />
-              <label htmlFor='rated'>Rated:</label>
+              <label className='form' htmlFor='rated'>
+                Rated:
+              </label>
               <input type='text' onChange={this.handleChange} id='rated' />
               <br />
-              <label htmlFor='genre'>Genre:</label>
+              <label className='form' htmlFor='genre'>
+                Genre:
+              </label>
               <input
                 type='text'
                 onChange={this.handleChange}
@@ -82,7 +90,11 @@ class App extends React.Component {
               ></input>
 
               <br />
-              <input type='submit' value='Submit'></input>
+              <input
+                className='form-button'
+                type='submit'
+                value='Submit'
+              ></input>
             </form>
           </div>
           <div className='container-2'>
@@ -104,11 +116,22 @@ class App extends React.Component {
               })}
             </ul>
           </div>
-          <div className='container-2'>
+          <div className='container-3'>
             <h5>
               Accepted Requests <br />
               Coming Soon
             </h5>
+            <div className='coming-soon'>
+              <div className='fight'>
+                <h7>Fight Club</h7>
+              </div>
+              <div className='matrix'>
+                <h7>The Matrix</h7>
+              </div>
+              <div className='sixth'>
+                <h7>The Sixth Sense</h7>
+              </div>
+            </div>
           </div>
         </div>
       </div>

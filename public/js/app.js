@@ -2,7 +2,7 @@ class App extends React.Component {
   state = {};
 
   render = () => {
-    return <h1><img src="https://i.imgur.com/ZigyyR8.png"/></h1>;
+    return <div className="header-img"> </div>;
   };
 }
 

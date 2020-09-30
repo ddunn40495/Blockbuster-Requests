@@ -1,3 +1,4 @@
+const { request } = require("express");
 // =======================================
 //
 //          REQUEST CONTROLLER
@@ -27,16 +28,15 @@ const Request = require("../models/request");
 POST ROUTE
 ============= */
 //CREATE REQUEST
-requests.post("/", async (req, res) => {
-  try {
-    const request = await Request.create(req.body);
+requests.post("/", (req, res) => {
+  Request.create(req.body, (err, createdRequest) => {
     console.log(
-      `This is the request you just created ==================================${request}================================================`
+      `This is the request you just created ==================================${createdRequest}================================================`
     );
-    res.redirect("/blockbuster/requests");
-  } catch (error) {
-    res.send(error);
-  }
+    Request.find({}, (err, foundRequests) => {
+      res.json(foundRequests);
+    });
+  });
 });
 
 /* ===========
@@ -59,6 +59,9 @@ requests.put("/:id", (req, res) => {
     req.body,
     { new: true },
     (error, updatedRequest) => {
+      console.log(
+        `This is the request you just updated ==================================${updatedRequest}================================================`
+      );
       if (error) {
         res.send(error);
       } else {
@@ -74,13 +77,15 @@ requests.put("/:id", (req, res) => {
 DELETE ROUTE
 ============= */
 //DELETE REQUEST
-requests.delete("/:id", async (req, res) => {
-  try {
-    await Request.findByIdAndRemove(req.params.id);
-    res.redirect("/blockbuster/requests");
-  } catch (error) {
-    res.send(error);
-  }
+requests.delete("/:id", (req, res) => {
+  Request.findByIdAndRemove(req.params.id, (err, deletedRequest) => {
+    console.log(
+      `This is the request you just deleted ==================================${deletedRequest}================================================`
+    );
+    Request.find({}, (err, foundRequests) => {
+      res.json(foundRequests);
+    });
+  });
 });
 
 module.exports = requests;

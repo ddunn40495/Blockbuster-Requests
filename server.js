@@ -4,7 +4,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-
+const cors = require("cors");
 // =======================================
 //              MIDDLEWARE
 // =======================================
@@ -19,6 +19,22 @@ app.use(express.urlencoded({ extended: true }));
 //     saveUninitialized: false
 //   })
 // )
+const whitelist = [
+  "http://localhost:3000",
+  "https://fathomless-sierra-68956.herokuapp.com",
+  "http://127.0.0.1:5500",
+];
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+};
+
+app.use(cors(corsOptions));
 
 // =======================================
 //              DATABASE

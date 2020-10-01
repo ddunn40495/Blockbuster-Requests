@@ -1,6 +1,5 @@
 class Molly extends React.Component {
   state = {};
-
   render = () => {
     return (
       <section>

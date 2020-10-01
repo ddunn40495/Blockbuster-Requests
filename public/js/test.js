@@ -90,17 +90,6 @@ class App extends React.Component {
     );
   };
 
-  changeEdit = () => {
-    this.setState({
-      edit: true,
-    });
-  };
-  checkEdit = (event) => {
-    if (this.state.edit === true) {
-      this.grabUpdateForm(event);
-    }
-  };
-
   render = () => {
     return (
       <div>
@@ -157,10 +146,6 @@ class App extends React.Component {
                     <button value={movie._id} onClick={this.deleteRequest}>
                       DELETE
                     </button>
-                    <button value={movie._id} onClick={this.changeEdit}>
-                      EDIT
-                    </button>
-                    {this.checkEdit(movie._id)}
                   </li>
                 );
               })}

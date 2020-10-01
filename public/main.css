@@ -116,7 +116,7 @@ h5 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  height: 250px;
   color: #10fe00;
 }
 
@@ -125,7 +125,7 @@ h5 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  height: 250px;
   color: #10fe00;
 }
 
@@ -134,8 +134,29 @@ h5 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  height: 250px;
   color: #10fe00;
 }
 
+li {
+  color: #fa1d00;
+}
 
+input[type=text] {
+  background-color: #E39C16;
+  font-family: 'Secular One', sans-serif;
+}
+
+button {
+  border: 2px solid #E39C16;
+  border-radius: 25px;
+  font-family: 'Secular One', sans-serif;
+  background-color: #0000FF;
+  color: #E39C16;
+}
+
+button:hover {
+  border: 2px solid #0000FF;
+  color: black;
+  background-color: #E39C16;
+}

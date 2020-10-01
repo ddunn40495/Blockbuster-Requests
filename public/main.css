@@ -1,14 +1,14 @@
 body {
   background-color: black;
-  font-family: 'Secular One', sans-serif;
+  font-family: "Secular One", sans-serif;
 }
 
 .container-1 {
-  background-color: #726A63;
+  background-color: #726a63;
   padding: 70px 100px 100px 100px;
   border-radius: 25px;
   margin: 50px 0px 100px 0px;
-  border: 5px dotted #E39C16;
+  border: 5px dotted #e39c16;
 }
 
 .header-img {
@@ -30,35 +30,47 @@ body {
   -ms-animation-duration: 1000ms;
   -ms-animation-iteration-count: 1;
   -ms-animation-timing-function: ease-in-out;
-  
+
   animation-name: spin;
   animation-duration: 1000ms;
   animation-iteration-count: 1;
   animation-timing-function: ease-;
 }
 @-ms-keyframes spin {
-  from { -ms-transform: rotate(0deg); }
-  to { -ms-transform: rotate(360deg); }
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
 }
 @-moz-keyframes spin {
-  from { -moz-transform: rotate(0deg); }
-  to { -moz-transform: rotate(360deg); }
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
 }
 @-webkit-keyframes spin {
-  from { -webkit-transform: rotate(0deg); }
-  to { -webkit-transform: rotate(360deg); }
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
 @keyframes spin {
   from {
-      transform:rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform:rotate(360deg);
-  }  
+    transform: rotate(360deg);
+  }
 }
 
 h5 {
-  color: #E39C16;
+  color: #e39c16;
 }
 
 .main-section {
@@ -68,35 +80,39 @@ h5 {
   margin: 0px 0px 50px 0px;
 }
 
-.container-2 {
-  background-color: #726A63;
-  border: 3px solid #0000FF;
+.container-2,
+.edit-div {
+  background-color: #726a63;
+  border: 3px solid #0000ff;
   border-radius: 25px;
   padding: 1em;
 }
 
+.edit-div {
+  height: 50px;
+  width: 50px;
+}
 .form {
-  color: #0000FF;
+  color: #0000ff;
 }
 
 .form-button {
-  border: 2px solid #E39C16;
+  border: 2px solid #e39c16;
   border-radius: 25px;
-  font-family: 'Secular One', sans-serif;
-  background-color: #0000FF;
-  color: #E39C16;
+  font-family: "Secular One", sans-serif;
+  background-color: #0000ff;
+  color: #e39c16;
 }
 
 .form-button:hover {
-  border: 2px solid #0000FF;
+  border: 2px solid #0000ff;
   color: black;
-  background-color: #E39C16;
+  background-color: #e39c16;
 }
 
-
 .container-3 {
-  background-color: #726A63;
-  border: 3px solid #0000FF;
+  background-color: #726a63;
+  border: 3px solid #0000ff;
   border-radius: 25px;
   padding: 1em;
 }
@@ -112,7 +128,7 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
   height: 200px;
-  color: #0000FF;
+  color: #0000ff;
 }
 
 .matrix {
@@ -121,7 +137,7 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
   height: 200px;
-  color: #0000FF;
+  color: #0000ff;
 }
 
 .sixth {
@@ -130,10 +146,8 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
   height: 200px;
-  color: #0000FF;
+  color: #0000ff;
 }
 
-input[type=text] {
-  background-color: black;
-  color: #726A63;
+input[type="text"] {
 }

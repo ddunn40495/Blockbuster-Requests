@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Frozen",
+    "genre": "Kids",
+    "rated": "PG",
+    "year": "2013"
+  },
+  {
+    "title": "The Dark Knight",
+    "genre": "Action",
+    "rated": "PG-13",
+    "year": "2008"
+  },
+  {
+    "title": "Pulp Fiction",
+    "genre": "Action",
+    "rated": "R",
+    "year": "1994"
+  },
+  {
+    "title": "Forrest Gump",
+    "genre": "Classic",
+    "rated": "PG-13",
+    "year": "1994"
+  },
+  {
+    "title": "Inception",
+    "genre": "Action",
+    "rated": "PG-13",
+    "year": "2010"
+  },
+  {
+    "title": "Saving Private Ryan",
+    "genre": "Action",
+    "rated": "PG-13",
+    "year": "1998"
+  },
+  {
+    "title": "Interstellar",
+    "genre": "Action",
+    "rated": "PG-13",
+    "year": "2014"
+  },
+  {
+    "title": "Back To The Future ",
+    "genre": "Action",
+    "rated": "PG-13",
+    "year": "1985"
+  },
+  {
+    "title": "Gladiator",
+    "genre": "Thriller",
+    "rated": "PG-13",
+    "year": "2000"
+  },
+  {
+    "title": "The Departed",
+    "genre": "Thiller",
+    "rated": "R",
+    "year": "2006"
+  },
+  {
+    "title": "The Prestige",
+    "genre": "Thiller",
+    "rated": "PG-13",
+    "year": "2006"
+  },
+  {
+    "title": "Casablanca",
+    "genre": "Drama",
+    "rated": "PG-13",
+    "year": "1942"
+  },
+  {
+    "title": "WALL_E",
+    "genre": "Kids",
+    "rated": "PG",
+    "year": "2008"
+  },
+  {
+    "title": "Braveheart",
+    "genre": "Action",
+    "rated": "PG-13",
+    "year": "1995"
+  }
+]

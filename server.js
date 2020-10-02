@@ -16,9 +16,9 @@ app.use(express.urlencoded({ extended: true }));
 //   session({
 //     secret: process.env.SECRET,
 //     resave: false,
-//     saveUninitialized: false
+//     saveUninitialized: false,
 //   })
-// )
+// );
 const whitelist = [
   "http://localhost:3000",
   "https://fathomless-sierra-68956.herokuapp.com",

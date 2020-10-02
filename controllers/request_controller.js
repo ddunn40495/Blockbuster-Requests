@@ -39,14 +39,21 @@ requests.post("/", (req, res) => {
   });
 });
 
+// Request.find({}, (err, foundRequests) => {
+//   res.json(foundRequests);
+// });
 /* ===========
 GET ROUTE
 ============= */
 //INDEX REQUEST
 requests.get("/", (req, res) => {
-  Request.find({}, (err, foundRequests) => {
-    res.json(foundRequests);
-  });
+  Request.find({})
+    .limit(10)
+    .sort("createdAt")
+    .exec((err, foundRequests) => {
+      console.log(foundRequests);
+      res.json(foundRequests);
+    });
 });
 
 /* ===========

@@ -4,7 +4,8 @@ class App extends React.Component {
     year: "",
     rated: "",
     genre: "",
-    post: true,
+    edit: false,
+    putID: null,
     movies: [],
   };
   componentDidMount = () => {
@@ -42,8 +43,7 @@ class App extends React.Component {
       );
   };
   updateRequest = (event) => {
-    event.preventDefault();
-    const id = event.target.id;
+    const id = event;
     axios
       .put("http://localhost:3004/blockbuster/requests/" + id, this.state)
       .then((response) => {
@@ -53,9 +53,43 @@ class App extends React.Component {
           rated: "",
           genre: "",
           movies: response.data,
+          edit: false,
         });
       });
   };
+
+  grabUpdateForm = (event) => {
+    return (
+      <div className='edit-div'>
+        <h5>Edit a Request</h5>
+        <form className='form' onSubmit={this.updateRequest(event)}>
+          <label className='form' htmlFor='title'>
+            Title:
+          </label>
+          <input type='text' onChange={this.handleChange} id='title' />
+          <br />
+          <label className='form' htmlFor='year'>
+            Year:
+          </label>
+          <input type='text' onChange={this.handleChange} id='year' />
+          <br />
+          <label className='form' htmlFor='rated'>
+            Rated:
+          </label>
+          <input type='text' onChange={this.handleChange} id='rated' />
+          <br />
+          <label className='form' htmlFor='genre'>
+            Genre:
+          </label>
+          <input type='text' onChange={this.handleChange} id='genre'></input>
+
+          <br />
+          <input className='form-button' type='submit' value='Edit'></input>
+        </form>
+      </div>
+    );
+  };
+
   render = () => {
     return (
       <div>
@@ -111,9 +145,6 @@ class App extends React.Component {
                     <br />
                     <button value={movie._id} onClick={this.deleteRequest}>
                       DELETE
-                    </button>
-                    <button value={movie._id} onClick={this.updateRequest}>
-                      EDIT
                     </button>
                   </li>
                 );

@@ -1,10 +1,13 @@
 body {
   background-color: black;
-  font-family: "Secular One", sans-serif;
+  font-family: 'Secular One', sans-serif;
+  background-image: url("./assets/Final-Blockbuster-700x321.jpg");
+  background-size: stretch;
+  background-blend-mode: color-burn;
 }
 
 .container-1 {
-  background-color: #726a63;
+  background-color: black;
   padding: 70px 100px 100px 100px;
   border-radius: 25px;
   margin: 50px 0px 100px 0px;
@@ -75,17 +78,18 @@ h5 {
 
 .main-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
   margin: 0px 0px 50px 0px;
 }
 
-.container-2,
-.edit-div {
-  background-color: #726a63;
-  border: 3px solid #0000ff;
+
+.container-2 {
+  background-color: black;
+  border: 3px solid #0000FF;
   border-radius: 25px;
   padding: 1em;
+  width: 300px;
 }
 
 .edit-div {
@@ -93,7 +97,8 @@ h5 {
   width: 50px;
 }
 .form {
-  color: #0000ff;
+
+  color: #10fe00;
 }
 
 .form-button {
@@ -111,10 +116,12 @@ h5 {
 }
 
 .container-3 {
-  background-color: #726a63;
-  border: 3px solid #0000ff;
+
+  background-color: black;
+  border: 3px solid #0000FF;
   border-radius: 25px;
   padding: 1em;
+  width: 300px;
 }
 
 .coming-soon {
@@ -127,8 +134,9 @@ h5 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
-  color: #0000ff;
+
+  height: 250px;
+  color: #10fe00;
 }
 
 .matrix {
@@ -136,8 +144,9 @@ h5 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
-  color: #0000ff;
+
+  height: 250px;
+  color: #10fe00;
 }
 
 .sixth {
@@ -145,9 +154,30 @@ h5 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
-  color: #0000ff;
+
+  height: 250px;
+  color: #10fe00;
 }
 
-input[type="text"] {
+li {
+  color: #fa1d00;
+}
+
+input[type=text] {
+  background-color: #E39C16;
+  font-family: 'Secular One', sans-serif;
+}
+
+button {
+  border: 2px solid #E39C16;
+  border-radius: 25px;
+  font-family: 'Secular One', sans-serif;
+  background-color: #0000FF;
+  color: #E39C16;
+}
+
+button:hover {
+  border: 2px solid #0000FF;
+  color: black;
+  background-color: #E39C16;
 }

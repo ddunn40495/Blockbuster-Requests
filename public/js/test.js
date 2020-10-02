@@ -158,13 +158,13 @@ class App extends React.Component {
             </h5>
             <div className='coming-soon'>
               <div className='fight'>
-                <h4>Fight Club</h4>
+                <h6>Fight Club</h6>
               </div>
               <div className='matrix'>
-                <h4>The Matrix</h4>
+                <h6>The Matrix</h6>
               </div>
               <div className='sixth'>
-                <h4>The Sixth Sense</h4>
+                <h6>The Sixth Sense</h6>
               </div>
             </div>
           </div>

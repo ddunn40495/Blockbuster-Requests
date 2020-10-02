@@ -1,3 +1,162 @@
-h1 {
-  color: red;
+body {
+  background-color: black;
+  font-family: 'Secular One', sans-serif;
+  background-image: url("./assets/Final-Blockbuster-700x321.jpg");
+  background-size: stretch;
+  background-blend-mode: color-burn;
+}
+
+.container-1 {
+  background-color: black;
+  padding: 70px 100px 100px 100px;
+  border-radius: 25px;
+  margin: 50px 0px 100px 0px;
+  border: 5px dotted #E39C16;
+}
+
+.header-img {
+  background-image: url("./assets/Blockbuster_logo.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  border-radius: 25px;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 1000ms;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 1000ms;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-timing-function: ease-in-out;
+  
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-;
+}
+@-ms-keyframes spin {
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }  
+}
+
+h5 {
+  color: #E39C16;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+
+.container-2 {
+  background-color: black;
+  border: 3px solid #0000FF;
+  border-radius: 25px;
+  padding: 1em;
+  width: 300px;
+}
+
+.form {
+  color: #10fe00;
+}
+
+.form-button {
+  border: 2px solid #E39C16;
+  border-radius: 25px;
+  font-family: 'Secular One', sans-serif;
+  background-color: #0000FF;
+  color: #E39C16;
+}
+
+.form-button:hover {
+  border: 2px solid #0000FF;
+  color: black;
+  background-color: #E39C16;
+}
+
+
+.container-3 {
+  background-color: black;
+  border: 3px solid #0000FF;
+  border-radius: 25px;
+  padding: 1em;
+  width: 300px;
+}
+
+.coming-soon {
+  display: inline-block;
+  max-width: 200px;
+}
+
+.fight {
+  background-image: url("./assets/fight_club.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  color: #10fe00;
+}
+
+.matrix {
+  background-image: url("./assets/matrix.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  color: #10fe00;
+}
+
+.sixth {
+  background-image: url("./assets/sixth_sense.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  color: #10fe00;
+}
+
+li {
+  color: #fa1d00;
+}
+
+input[type=text] {
+  background-color: #E39C16;
+  font-family: 'Secular One', sans-serif;
+}
+
+button {
+  border: 2px solid #E39C16;
+  border-radius: 25px;
+  font-family: 'Secular One', sans-serif;
+  background-color: #0000FF;
+  color: #E39C16;
+}
+
+button:hover {
+  border: 2px solid #0000FF;
+  color: black;
+  background-color: #E39C16;
 }
